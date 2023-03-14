@@ -115,17 +115,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _modules_items_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/items.js */ \"./src/modules/items.js\");\n\n\n\nconst getInputFormValues = () => {\n  const form = document.getElementById('form');\n  const nameInput = document.getElementById('name');\n  const scoreInput = document.getElementById('score');\n  const dataStored = JSON.parse(localStorage.getItem('data') || '[]');\n  const score = new _modules_items_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"](dataStored);\n  form.addEventListener('submit', (e) => {\n    e.preventDefault();\n    const dataObj = {\n      name: nameInput.value,\n      score: scoreInput.value,\n    };\n\n    score.create(dataObj);\n    form.reset();\n  });\n};\n\nwindow.addEventListener('load', getInputFormValues);\n\n\n//# sourceURL=webpack://loaderboard-app/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/modules/items.js":
-/*!******************************!*\
-  !*** ./src/modules/items.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass Score {\n  constructor(newData) {\n    this.newData = newData;\n    this.display();\n  }\n\n  getdatastored() {\n    const dataStored = JSON.parse(localStorage.getItem('data') || '[]');\n    this.newData = dataStored;\n    return dataStored;\n  }\n\n  display() {\n    const items = document.getElementById('items');\n    const newData = this.getdatastored();\n    items.innerHTML = '';\n    newData.forEach((data) => {\n      const li = document.createElement('li');\n      li.className = 'itemScore';\n\n      const element = `\n      <h3>${data.name} :</h3>\n      <p>${data.score}<p>\n      `;\n      li.innerHTML = element;\n      items.appendChild(li);\n    });\n  }\n\n  create(dataObj) {\n    this.newData.push(dataObj);\n    localStorage.setItem('data', JSON.stringify(this.newData));\n    this.display();\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Score);\n\n\n//# sourceURL=webpack://loaderboard-app/./src/modules/items.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\n\n\n//# sourceURL=webpack://loaderboard-app/./src/index.js?");
 
 /***/ })
 
