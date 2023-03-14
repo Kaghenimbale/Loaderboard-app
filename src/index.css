@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+.description {
+  display: flex;
+  gap: 2rem;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  width: 70vw;
+  padding: 0.8rem 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+}
+
+#items {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 3px solid black;
+  padding: 0.6rem;
+}
+
+.itemScore {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 2rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.itemScore:nth-child(even) {
+  background: lightgray;
+}
+
+.itemScore h3 {
+  font-size: 1.2rem;
+}
+
+.itemScore p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .scores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #items {
+    width: 40vw;
+  }
+
+  input {
+    width: 30vw;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}

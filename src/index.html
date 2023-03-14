@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Loaderboard</h1>
+
+        <div class="scores">
+            <div class="display-score score">
+                <div class="description">
+                    <h2>Recents scores</h2>
+                    <button type="button">Refresh</button>
+                </div>
+                <ul id="items">
+                    <li class="itemScore">
+                        <h3>Ronaldo :</h3>
+                        <p>700</p>
+                    </li>
+                    <li class="itemScore">
+                        <h3>Messi :</h3>
+                        <p>600</p>
+                    </li>
+
+                    <li class="itemScore">
+                        <h3>Mbappe :</h3>
+                        <p>400</p>
+                    </li>
+
+                    <li class="itemScore">
+                        <h3>Neymar :</h3>
+                        <p>200</p>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="add-score score">
+                <h2>Add your score</h2>
+    
+                <form action="#" id="form">
+                    <label for="username">
+                        <input type="text" name="username" id="name" required placeholder="Your name">
+                    </label>
+                    <label for="score">
+                        <input type="text" name="score" id="score" required placeholder="Your score">
+                    </label>
+
+                    <div class="btn-submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
