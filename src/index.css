@@ -81,3 +81,21 @@ button {
 .itemScore p {
   font-size: 1.2rem;
 }
+
+@media screen and (min-width: 768px) {
+  .scores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #items {
+    width: 40vw;
+  }
+
+  input {
+    width: 30vw;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}
