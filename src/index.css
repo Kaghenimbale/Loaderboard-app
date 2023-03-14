@@ -18,3 +18,66 @@ h1 {
 h2 {
   font-size: 1.6rem;
 }
+
+.description {
+  display: flex;
+  gap: 2rem;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  width: 70vw;
+  padding: 0.8rem 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+}
+
+#items {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 3px solid black;
+  padding: 0.6rem;
+}
+
+.itemScore {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 2rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.itemScore:nth-child(even) {
+  background: lightgray;
+}
+
+.itemScore h3 {
+  font-size: 1.2rem;
+}
+
+.itemScore p {
+  font-size: 1.2rem;
+}
