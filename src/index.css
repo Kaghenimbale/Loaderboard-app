@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
