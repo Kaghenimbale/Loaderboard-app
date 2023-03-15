@@ -51,6 +51,12 @@ input {
 
 button {
   padding: 0.6rem 1rem;
+  box-shadow: 6px 6px 6px gray;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 #items {
