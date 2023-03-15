@@ -8,5 +8,3 @@ const form = document.getElementById('form');
 refreshBtn.addEventListener('click', getData);
 
 form.addEventListener('submit', InputValues);
-
-window.addEventListener('DOMContentLoaded', InputValues);

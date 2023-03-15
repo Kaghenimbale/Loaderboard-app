@@ -1,5 +1,3 @@
-import getData from './items.js';
-
 const InputName = document.getElementById('name');
 const InputScore = document.getElementById('score');
 const form = document.getElementById('form');
@@ -16,7 +14,6 @@ const InputValues = async (e) => {
     },
     body: JSON.stringify(obj),
   });
-  getData();
   form.reset();
 };
 
