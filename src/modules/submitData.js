@@ -1,4 +1,4 @@
-import getData from './items';
+import getData from './items.js';
 
 const InputName = document.getElementById('name');
 const InputScore = document.getElementById('score');
