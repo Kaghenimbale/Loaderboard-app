@@ -105,3 +105,12 @@ button:hover {
     font-size: 1.2rem;
   }
 }
+
+#preloader {
+  background: rgba(0, 0, 0, 0.928) url(./images/circle-loader-gif-2.gif) no-repeat center;
+  background-size: 10%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
